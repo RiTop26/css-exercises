@@ -1,3 +1,7 @@
+/* we could also add text-align: center; to the body, and it would do 
+the same thing as the repetion we have below since all the element are 
+within the body, and we wouldn't have to add .text. */
+
 body {
   font-family: 'Courier New', Courier, monospace;
 }
@@ -10,7 +14,25 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+  margin-bottom: 32px;
+  text-align: center;
 }
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.first, .second, .third, .fourth {
+  max-width: 200px;
+  text-align: center;
+}
+
+.text {
+  text-align: center;
+}
+
 
 /* do not edit this footer */
 .footer {
